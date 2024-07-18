@@ -103,3 +103,7 @@ jobs:
     - name: msbuild
       run: |
         msbuild windows\ZeroTierOne.sln /m /p:Configuration=Release  /property:Platform=x64 /t:ZeroTierOne        
+    - uses: actions/upload-artifact@v4
+      with:
+        name: my-artifact
+        path: cache.tzst
