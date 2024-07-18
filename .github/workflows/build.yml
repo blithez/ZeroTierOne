@@ -2,7 +2,7 @@ on: [ push ]
 
 jobs:
   build_ubuntu:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - name: gitconfig
       run: |
@@ -110,4 +110,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: my-artifact
-        path: D:/a/ZeroTierOne/ZeroTierOne/windows/Build/x64/Release/zerotier-one_x64.exe
+        path: windows/Build/x64/Release/zerotier-one_x64.exe
