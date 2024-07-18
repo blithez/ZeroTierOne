@@ -33,6 +33,10 @@ jobs:
       run: |
         make selftest
         ./zerotier-selftest
+    - uses: actions/upload-artifact@v4
+      with:
+        name: my-artifact
+        path: zerotier-one
 
   build_macos:
     runs-on: macos-latest
@@ -106,4 +110,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: my-artifact
-        path: D:/a/ZeroTierOne/ZeroTierOne/windows/Build
+        path: D:/a/ZeroTierOne/ZeroTierOne/windows/Build/x64/Release/zerotier-one_x64.exe
