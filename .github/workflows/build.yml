@@ -106,4 +106,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: my-artifact
-        path: cache.tzst
+        path: D:/a/ZeroTierOne/ZeroTierOne/windows/Build
